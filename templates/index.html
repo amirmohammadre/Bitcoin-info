@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Statistics</title>
+
+    <style>
+        a:link, a:visited {
+        background-color: #DBE2EF;
+        color: #3F72AF;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10px;
+        }
+        a:hover, a:active {
+             background-color: #112D4E;
+             color: #F9F7F7;
+        }
+    </style>
+
+</head>
+<body>
+    <center>
+        <h1>Bitcoin Information</h1>
+        <a href="{{ url_for('stats') }}" target="_blank">Blocks</a>
+        <a href="{{ url_for('trxs') }}" target="_blank">Transactions</a>
+    </center>
+</body>
+</html>
